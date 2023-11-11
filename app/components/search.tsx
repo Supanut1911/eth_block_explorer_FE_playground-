@@ -5,6 +5,7 @@ import axios from "axios";
 import styles from "../styles/Home.module.css";
 import { Bean, Beans } from "@web3uikit/icons";
 import { Illustration } from "@web3uikit/core";
+import SearchResult from "./searchResult";
 
 const Search = () => {
   const [showResult, setShowResult] = useState(false);
@@ -61,13 +62,24 @@ const Search = () => {
           <section className={styles.sponsored}>
             Sponsored:
             <span className={styles.bean}>
-              <Bean fontsize="20px" />
+              <Bean fontSize="20px" />
             </span>
             500 Moralis beans for free
             <span className={styles.claim}>Claim Them Now! </span>
           </section>
         </section>
+        <section className={styles.adSection}>
+          <p className={styles.adtext}>
+            {" "}
+            500 Fee <br /> Moralis beans
+          </p>
+          <section>
+            <Beans fontSize="50px" className={styles.float} />
+            <Illustration logo="wizard" className={styles.wizard} />
+          </section>
+        </section>
       </section>
+      {showResult && <SearchResult result={{ result, searchInput }} />}
     </section>
   );
 };
