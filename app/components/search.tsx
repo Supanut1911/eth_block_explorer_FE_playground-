@@ -58,6 +58,14 @@ const Search = () => {
               </svg>
             </button>
           </section>
+          <section className={styles.sponsored}>
+            Sponsored:
+            <span className={styles.bean}>
+              <Bean fontsize="20px" />
+            </span>
+            500 Moralis beans for free
+            <span className={styles.claim}>Claim Them Now! </span>
+          </section>
         </section>
       </section>
     </section>
