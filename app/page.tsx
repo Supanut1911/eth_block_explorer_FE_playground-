@@ -1,9 +1,9 @@
 import Header from "./components/header";
-// import Styles from "./";
+import Styles from "./styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <section>all components</section>
+      <section className={Styles.main}>all components</section>
       <Header />
     </>
   );
