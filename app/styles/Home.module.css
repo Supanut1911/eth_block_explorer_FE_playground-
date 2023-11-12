@@ -4,6 +4,8 @@
   align-items: center;
   min-height: 100vh;
   background-color: #161616;
+  /* background-color: white; */
+
   font-family: "Golos", sans-serif, Arial, Helvetica;
   color: white;
 }
